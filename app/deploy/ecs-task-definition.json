@@ -22,7 +22,7 @@
             "logConfiguration": {
                 "logDriver": "awslogs",
                 "options": {
-                    "awslogs-group": "/ecs/ci-cd-app",
+                    "awslogs-group": "/ecs/container-technologies",
                     "mode": "non-blocking",
                     "awslogs-create-group": "true",
                     "max-buffer-size": "25m",
@@ -41,7 +41,7 @@
             }
         }
     ],
-    "family": "ci-cd-app",
+    "family": "container-technologies",
     "taskRoleArn": "arn:aws:iam::903952542003:role/LabRole",
     "executionRoleArn": "arn:aws:iam::903952542003:role/LabRole",
     "networkMode": "awsvpc",
@@ -59,7 +59,7 @@
     "tags": [
         {
             "key": "Name",
-            "value": "ci-cd-app"
+            "value": "container-technologies"
         }
     ]
 }
